@@ -1,4 +1,7 @@
+var MongoUri = process.env.MONGOLAB_URI || 'mongodb://localhost/worldBook'
+
+
 module.exports = {
   'secret': 'jsonwebtokensaregreat',
-  'database': 'mongodb://localhost:27017/worldBook'
+  'database' :  MongoUri
 };
