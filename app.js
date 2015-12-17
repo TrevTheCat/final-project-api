@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(morgan('dev'));
 app.use(cors({
-  origin: "http://localhost:8000"
+  origin: "https://worldwize.herokuapp.com"
 }));
 app.use(passport.initialize());
 
