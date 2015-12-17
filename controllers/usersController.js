@@ -23,6 +23,7 @@ function usersUpdate(req, res){
     if (req.body.local.password) user.local.password = req.body.local.password;
     if (req.body.local.fullname) user.local.fullname = req.body.local.fullname;
     if (req.body.local.score) user.local.score = req.body.local.score;
+    if (req.body.local.image) user.local.image = req.body.local.image;
     
     user.save(function(err) {
      if (err) return res.status(500).json({message: "Something went wrong!"});
